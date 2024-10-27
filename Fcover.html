@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>You.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="audio.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="cover">
+      <!-- hamburger menu -->
+      <div class="menu-icon" onclick="toggleMenu()">
+        <i class="bx bx-menu"></i>
+      </div>
+
+      <div class="sidebar" id="sidebar">
+        <i class="bx bx-x close-icon" onclick="toggleMenu()"></i>
+        <ul>
+          <li><a href="Pembukaan.html">Pembukaan</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <!-- hamburger menu -->
+
+      <!-- backsound -->
+      <audio id="audio" src="audio/sampai jadi debu.mp3" preload="auto" loop></audio>
+      <div class="volume-icon" onclick="toggleAudio()">
+          <i id="volume-icon" class="bx bx-volume-full"></i>
+      </div>
+      <!-- backsound -->
+
+      <!-- btn -->
+      <button><a href="pembukaan.html">Mulai</a></button>
+      <!-- btn -->
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
